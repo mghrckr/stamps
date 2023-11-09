@@ -1,6 +1,7 @@
+require('dotenv').config();
 const axios = require('axios');
 
-const apiKey = '1671d645e4173d67a0124915fec06777';
+const apiKey = process.env.SECRET
 const city = 'Jakarta';
 const apiUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=-6.2088&lon=106.8456&cnt=40&units=metric&appid=${apiKey}`;
 
